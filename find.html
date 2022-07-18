@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+          <!--first 아이콘-->
+          <span>11%</span>
+          <i class="fa-solid fa-battery-quarter fa-lg"></i>
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+          <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+          <a href="setting.html">
+            <span><i class="fa-solid fa-gear fa-lg"></i></span>
+          </a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <div class="menu_item">
+            <i class="fa-solid fa-qrcode fa-3x"></i>
+            <span>QR Code</span>
+        </div>
+        <div class="menu_item">
+            <i class="fa-regular fa-address-book fa-3x"></i>
+            <span>Add by Contacts</span>
+        </div>
+        <div class="menu_item">
+            <i class="fa-regular fa-address-card fa-3x"></i>
+            <span>Add by ID</span>
+        </div>
+        <div class="menu_item">
+            <i class="fa-regular fa-envelope fa-3x"></i>
+            <span>Invite</span>
+        </div>
+    </div>
+    <span id="recommend">Recommended Friends</span>
+    <div class="no_recommend">
+        <span>You have no recommended friends.</span>
+    </div>
+    <div class="open">
+        <div class="open_text">
+            <span>Open Chat</span>
+            <div>
+                <span>Go to Openchat Home</span>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="open_chat">
+            <div class="open_chat_left">
+                <span>#Yng&Rich</span>
+                <span class="open_chat_left_2">#SuperBee#UNEDU#Homis</span>
+                <div class="open_chat_left_bottom open_chat_left_3">
+                    <img src="https://img.etnews.com/news/article/2016/06/24/article_24225635479253.jpg">
+                    <span>445 members |</span>
+                    <span>Active</span>
+                </div>
+            </div>
+            <img src="https://blog.kakaocdn.net/dn/4h3EC/btqu5ye7nCw/VFFwTbvbKxlyhHYkdnaqKk/img.jpg">
+        </div>
+
+        <div class="open_chat">
+            <div class="open_chat_left">
+                <span>#AOMG</span>
+                <span class="open_chat_left_2">#JayPark#Gray#Loco</span>
+                <div class="open_chat_left_bottom open_chat_left_3">
+                    <img src="https://blog.kakaocdn.net/dn/kYI9n/btqwckPFett/Bghd0z7ejkoGDsesxywKKK/img.jpg">
+                    <span>758 members |</span>
+                    <span>Active</span>
+                </div>
+            </div>
+            <img src="https://media-exp1.licdn.com/dms/image/C560BAQHJ6d7_rZSPqw/company-logo_200_200/0/1609739692672?e=2147483647&v=beta&t=GI1dC8vnTxoxvMvvub0WO2gpDgTCcclklUoBM6CTe2Q">
+        </div>
+
+        <div class="open_chat">
+            <div class="open_chat_left">
+                <span>#YG</span>
+                <span class="open_chat_left_2">#BLACKPINK#BIGBANG#WINNER</span>
+                <div class="open_chat_left_bottom open_chat_left_3">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAASFBMVEUAAAD///9hYWGurq5eXl5GRkZaWlqioqKDg4OBgYHExMTIyMijo6OHh4eKiopnZ2dtbW0YGBg+Pj75+fm2trZ7e3uRkZFPT089KiJLAAACaUlEQVR4nO3b207bQBRG4aRACVDKGd7/TelIpHFsZ2aPZ58u1nft2l36zViVym4HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANGefgk8v9Ru8Sq6R9WTYeFe4qp2h2vRLRqCC29rN/itERhcWA1UWTC48E/tj+ssGFvoEhhZWA1UekVDC50C4wq9AsMK3QKjCj0+E6GFDh/62ELHBWMKPRcMKfQNDCh0fUUjCr0D3QvdA70L/QOdCwMCfQs1TtG326su756FOgveG/6VO1ksmCvRKHC/f/AqaOkI7DxksqxoFphmRbvALCsaBiZJtAzM8aLKAjf/cynBipYL5lhRYcH3zhVvVpj1HQtHAg+7u74V1y6yC9y1Axuv6OHfJfXE+YoBhaOBrcTZiv6FI4F3P5d9VK86X9G9cCTw8f+FB3mid6HGgoX8RXUurP4nhOYpOiVe0bmwpmPBQrpinsKuBQvhimkKuwNbiccVsxSKvoNzosQkhZsCZYk5CjsPmRPBcZOiUPyhX3psJmYo3Lxg0XxRExRuOEWnWivGFw4tWDS+i+GFgwsW9RWjCxUCNyQaR01t/A7O9SaaNp1RCuxONEw6N3zInPQlmhXNDHzol/4mLFRcsOhZ0aRnQeUUnepY0SBnSXnBQr6ies0K9QUL8YrKMWtMAuWJqi2r1L6Dc8JExZR1ZoHSRLWSCwwOmRNRolLIJaof+qXP8ELTBQvBigoZlxmdolPtRIWHXGS+YNFMVHnKuuf6k0d/Bo9aP4tKj1lT/x3eL7XnfIX9HjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyHwDTFke1S7lcLAAAAAASUVORK5CYII=">
+                    <span>1443 members |</span>
+                    <span>Active</span>
+                </div>
+            </div>
+            <img src="http://img.etoday.co.kr/pto_db/2021/01/700/20210127172500_1574814_1200_675.jpg">
+        </div>
+
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+              <a class="nav__link" href="friends.html">
+                <i class="fa-regular fa-user fa-2x"></i>
+              </a>
+            </li>
+            <li class="nav__btn">
+              <a class="nav__link" href="chats.html">
+                  <span class="nav__notification">1</span>
+                <i class="fa-regular fa-comment fa-2x"></i>
+              </a>
+            </li>
+            <li class="nav__btn">
+              <a class="nav__link" href="#">
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+              </a>
+            </li>
+            <li class="nav__btn">
+              <a class="nav__link" href="more.html">
+                  <div class="nav__flot"></div>
+                <i class="fa-solid fa-ellipsis fa-2x"></i>
+              </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <script
+      src="https://kit.fontawesome.com/3bec82e8d5.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
